@@ -77,6 +77,13 @@
   grid-gap: 0;
 }
 
+@media (max-width: 768px) {
+  .NavMainTopInside {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+}
+
 .NavMainBottomInside {
   width: 100%;
   display: grid;
@@ -1001,6 +1008,13 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: unset;
   font-weight: bold;
   transform: scale(1);
+}
+
+@media (max-width: 576px) {
+  .NMTI_SecInside_Link {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 .NMTI_SecInside_Link:hover {
