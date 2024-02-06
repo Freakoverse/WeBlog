@@ -1078,7 +1078,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease 0.4s;
   display: flex;
   flex-direction: row;
-  grid-gap: 5px;
+  grid-gap: 10px;
   justify-content: center;
   align-items: center;
   height: auto;
@@ -1185,11 +1185,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 25px;
   overflow: auto;
-  max-height: 70vh;
+  max-height: 80vh;
 }
 
 .popUpMainCardTopClose {
@@ -1445,7 +1445,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .HBSS_Author_Top_NostrLinksLink.HBSS_A_T_NLL_HBSSFollow.HBSS_A_T_NLL_HBSSFActive {
   background: linear-gradient(to top right, #232323, #262626, #232323);
-  border: solid 1px rgba(255,255,255,0);
+  border: solid 1px rgba(255,255,255,0.05);
 }
 
 .HBLA_AND_AD.HBLA_AND_ADLink {
@@ -1705,6 +1705,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   grid-gap: 15px;
+  flex-wrap: wrap;
 }
 
 .HomeBodyListCommentsCreation {
@@ -1742,6 +1743,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 576px) {
   .HBLCC_Top_Box {
     padding: 15px 15px;
+    height: 100px;
   }
 }
 
@@ -2108,14 +2110,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .HBSS_Author_Top_IconWrapped:hover > .HBSS_Author_Top_Icon {
   transition: ease 0.4s;
-  background: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.5);
   transform: scale(1.08);
 }
 
 .HBSS_Author_Top_IconWrapped:active > .HBSS_Author_Top_Icon {
   transition: ease 0.1s;
-  background: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.5);
   transform: scale(0.98);
 }
@@ -2162,10 +2162,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding-top: 100%;
   max-width: 350px;
-}
-
-.popUpMainCard.popUpMainCardSmall {
-  max-width: 500px;
 }
 
 .HBSS_WritersAndAdmin {
@@ -2347,6 +2343,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   border: solid 1px rgba(255,255,255,0.1);
   border-radius: 10px;
+  min-height: 200px;
 }
 
 .pUMCB_CommentToPrime {
@@ -2358,7 +2355,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .HBLCL_CommentTopOther {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -2388,6 +2385,17 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255,255,255,0.25);
 }
 
+.HBLCL_CTOLink:hover {
+  transition: ease 0.4s;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+}
+
+.HBLCL_CTOLink:active > .HBLCL_CTOLinkIcon {
+  transition: ease 0.1s;
+  transform: scale(0.9);
+}
+
 .HBLCL_CTOText {
   transition: ease 0.4s;
   display: flex;
@@ -2395,5 +2403,211 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   padding: 5px 10px;
+}
+
+.HBLCL_CommentTopPPWrapped {
+}
+
+.pUMCB_AdminSettingsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+
+.pUMCB_ASElement {
+  display: grid;
+  grid-template-columns: 2.35fr 0.35fr 0.35fr;
+  grid-gap: 15px;
+}
+
+@media (max-width: 576px) {
+  .pUMCB_ASElement {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.5fr;
+    grid-gap: 15px;
+  }
+}
+
+.pUMCB_ASElementAddress {
+  display: flex;
+  flex-direction: row;
+}
+
+.pUMCB_ASEAField {
+  transition: ease 0.4s;
+  width: 100%;
+  background: rgba(0,0,0,0.1);
+  border: solid 1px rgba(255,255,255,0.1);
+  outline: unset;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: rgba(255,255,255,0.75);
+}
+
+.pUMCB_ASElementCheck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.pUMCB_ASElementCheckBox {
+  width: 100%;
+  height: 100%;
+}
+
+.pUMCB_AdminSettings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+.pUMCB_ASActions {
+  display: grid;
+  grid-template-columns: 1.75fr 0.25fr;
+  grid-gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .pUMCB_ASActions {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-gap: 10px;
+  }
+}
+
+.pUMCB_ASASave {
+  transition: ease 0.4s;
+  text-decoration: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1px rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.25);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.pUMCB_ASAAdd {
+  transition: ease 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.25);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.pUMCB_ASASave:hover {
+  transition: ease 0.4s;
+  color: rgba(255,255,255,0.75);
+  box-shadow: 0 0 8px 0 rgb(0,0,0,0.1);
+  background: rgba(255,255,255,0.05);
+}
+
+#adminSettingsAddWritter:hover {
+  transition: ease 0.4s;
+  color: rgba(255,255,255,0.75);
+  box-shadow: 0 0 8px 0 rgb(0,0,0,0.1);
+  background: rgba(255,255,255,0.05);
+}
+
+.pUMCB_ASElementRemove {
+  transition: ease 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255,255,255,0.25);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.pUMCB_ASElementRemove:hover {
+  transition: ease 0.4s;
+  color: rgba(255,70,70,0.85);
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+}
+
+.popUpMainCard.popUpMainCardAlt {
+  max-width: 500px;
+}
+
+#richTextArea {
+  background: black;
+}
+
+.pUMCB_Write {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 25px;
+}
+
+.pUMCB_Write_FieldBox {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+
+.pUMCB_Write_FieldBox_Text {
+  transition: ease 0.4s;
+  font-weight: bold;
+  color: rgba(255,255,255,0.5);
+  padding: 0 0 0 5px;
+  font-size: 18px;
+}
+
+.pUMCB_Write_FieldBox_Input {
+  transition: ease 0.4s;
+  background: rgba(0,0,0,0.1);
+  outline: unset;
+  border-radius: 10px;
+  padding: 10px;
+  border: solid 1px rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 8px 0 rgb(0,0,0,0.1);
+}
+
+.pUMCB_Write_Actions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.pUMCB_Write_ActionsPublish {
+  transition: ease 0.4s;
+  color: rgba(255,255,255,0.5);
+  text-decoration: unset;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  background: rgba(255,255,255,0);
+  border: solid 1px rgba(255,255,255,0.1);
+}
+
+.pUMCB_Write_ActionsPublish:hover {
+  transition: ease 0.4s;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 0 8px 0 rgb(0,0,0,0.1);
+  color: rgba(255,255,255,0.75);
+  transform: scale(1.03);
+}
+
+.pUMCB_Write_ActionsPublish:active {
+  transition: ease 0.1s;
+  transform: scale(0.98);
 }
 

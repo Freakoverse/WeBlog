@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+<script>
+    tinymce.init({
+        selector: '#richTextArea',
+        height: 300, // Adjust the height as needed
+        plugins: 'link image code',
+        toolbar: 'undo redo | formatselect | bold italic | alignleft aligncenter alignright | bullist numlist outdent indent | link image | code',
+    });
+</script>
 </head>
 
 <body class="bodyMain">
@@ -196,7 +205,10 @@
                                                         <div id="siteOwnerOpenPopUpMainQR" class="HBSS_Author_Top_IconWrapped"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="HBSS_Author_Top_Icon">
                                                                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                                                 <path d="M144 32C170.5 32 192 53.49 192 80V176C192 202.5 170.5 224 144 224H48C21.49 224 0 202.5 0 176V80C0 53.49 21.49 32 48 32H144zM128 96H64V160H128V96zM144 288C170.5 288 192 309.5 192 336V432C192 458.5 170.5 480 144 480H48C21.49 480 0 458.5 0 432V336C0 309.5 21.49 288 48 288H144zM128 352H64V416H128V352zM256 80C256 53.49 277.5 32 304 32H400C426.5 32 448 53.49 448 80V176C448 202.5 426.5 224 400 224H304C277.5 224 256 202.5 256 176V80zM320 160H384V96H320V160zM352 448H384V480H352V448zM448 480H416V448H448V480zM416 288H448V416H352V384H320V480H256V288H352V320H416V288z"></path>
-                                                            </svg></div>
+                                                            </svg></div><a id="siteOwnerOpenPopUpMainQR" class="HBSS_Author_Top_IconWrapped" href="https://primal.net/p/npub18n4ysp43ux5c98fs6h9c57qpr4p8r3j8f6e32v0vj8egzy878aqqyzzk9r" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="HBSS_Author_Top_Icon">
+                                                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                                <path d="M256 64C256 46.33 270.3 32 288 32H415.1C415.1 32 415.1 32 415.1 32C420.3 32 424.5 32.86 428.2 34.43C431.1 35.98 435.5 38.27 438.6 41.3C438.6 41.35 438.6 41.4 438.7 41.44C444.9 47.66 447.1 55.78 448 63.9C448 63.94 448 63.97 448 64V192C448 209.7 433.7 224 416 224C398.3 224 384 209.7 384 192V141.3L214.6 310.6C202.1 323.1 181.9 323.1 169.4 310.6C156.9 298.1 156.9 277.9 169.4 265.4L338.7 96H288C270.3 96 256 81.67 256 64V64zM0 128C0 92.65 28.65 64 64 64H160C177.7 64 192 78.33 192 96C192 113.7 177.7 128 160 128H64V416H352V320C352 302.3 366.3 288 384 288C401.7 288 416 302.3 416 320V416C416 451.3 387.3 480 352 480H64C28.65 480 0 451.3 0 416V128z"></path>
+                                                            </svg></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -204,19 +216,19 @@
                                     </div>
                                     <div class="HBSS_Author_Top_Details">
                                         <p class="HBSS_Author_Top_Bio">I guess I'm one of those #vtubers . Having fun talking about general topics, vrchat/similar, and games. Also #indiedev #gamedev You can call me: Freak فْرِيكٌ フリク (still learning Nihongo). #envtuber #podcast #gaming #gamedev</p>
-                                        <div id="OwnerFollowLogin" class="HBSS_Author_Top_NostrLinks" style="display: flex;"><a class="HBSS_Author_Top_NostrLinksLink HBSS_A_T_NLL_HBSSFollow" target="_blank">
+                                        <div id="OwnerFollowLogin" class="HBSS_Author_Top_NostrLinks" style="display: flex;"><a id="followOwnerBtn" class="HBSS_Author_Top_NostrLinksLink HBSS_A_T_NLL_HBSSFollow" target="_blank">
                                                 <p>Follow</p>
-                                            </a><a class="HBSS_Author_Top_NostrLinksLink" href="https://primal.net/p/npub18n4ysp43ux5c98fs6h9c57qpr4p8r3j8f6e32v0vj8egzy878aqqyzzk9r" target="_blank"><i class="fas fa-external-link-alt HBSS_Author_Top_NostrLinksLinkIcon"></i></a></div>
+                                            </a></div>
                                     </div>
                                 </div>
                                 <div class="HBSS_Author_Bottom"></div>
                             </div>
                         </div>
                         <div id="WritersAndAdmin" class="HomeBodySideSec" style="display: none;">
-                            <div class="HBSS_WritersAndAdmin"><a class="HBSS_WAA_Btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <div class="HBSS_WritersAndAdmin"><a id="OpenPopUpMainWrite" class="HBSS_WAA_Btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                                         <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                         <path d="M467.1 241.1L351.1 288h94.34c-7.711 14.85-16.29 29.28-25.87 43.01l-132.5 52.99h85.65c-59.34 52.71-144.1 80.34-264.5 52.82l-68.13 68.13c-9.38 9.38-24.56 9.374-33.94 0c-9.375-9.375-9.375-24.56 0-33.94l253.4-253.4c4.846-6.275 4.643-15.19-1.113-20.95c-6.25-6.25-16.38-6.25-22.62 0l-168.6 168.6C24.56 58 366.9 8.118 478.9 .0846c18.87-1.354 34.41 14.19 33.05 33.05C508.7 78.53 498.5 161.8 467.1 241.1z"></path>
-                                    </svg>Write</a><a class="HBSS_WAA_Btn" href="#" style="max-width: 75px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                    </svg>Write</a><a id="OpenPopUpMainAdminSettings" class="HBSS_WAA_Btn" href="#" style="max-width: 75px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                                         <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                         <path d="M495.9 166.6C499.2 175.2 496.4 184.9 489.6 191.2L446.3 230.6C447.4 238.9 448 247.4 448 256C448 264.6 447.4 273.1 446.3 281.4L489.6 320.8C496.4 327.1 499.2 336.8 495.9 345.4C491.5 357.3 486.2 368.8 480.2 379.7L475.5 387.8C468.9 398.8 461.5 409.2 453.4 419.1C447.4 426.2 437.7 428.7 428.9 425.9L373.2 408.1C359.8 418.4 344.1 427 329.2 433.6L316.7 490.7C314.7 499.7 307.7 506.1 298.5 508.5C284.7 510.8 270.5 512 255.1 512C241.5 512 227.3 510.8 213.5 508.5C204.3 506.1 197.3 499.7 195.3 490.7L182.8 433.6C167 427 152.2 418.4 138.8 408.1L83.14 425.9C74.3 428.7 64.55 426.2 58.63 419.1C50.52 409.2 43.12 398.8 36.52 387.8L31.84 379.7C25.77 368.8 20.49 357.3 16.06 345.4C12.82 336.8 15.55 327.1 22.41 320.8L65.67 281.4C64.57 273.1 64 264.6 64 256C64 247.4 64.57 238.9 65.67 230.6L22.41 191.2C15.55 184.9 12.82 175.3 16.06 166.6C20.49 154.7 25.78 143.2 31.84 132.3L36.51 124.2C43.12 113.2 50.52 102.8 58.63 92.95C64.55 85.8 74.3 83.32 83.14 86.14L138.8 103.9C152.2 93.56 167 84.96 182.8 78.43L195.3 21.33C197.3 12.25 204.3 5.04 213.5 3.51C227.3 1.201 241.5 0 256 0C270.5 0 284.7 1.201 298.5 3.51C307.7 5.04 314.7 12.25 316.7 21.33L329.2 78.43C344.1 84.96 359.8 93.56 373.2 103.9L428.9 86.14C437.7 83.32 447.4 85.8 453.4 92.95C461.5 102.8 468.9 113.2 475.5 124.2L480.2 132.3C486.2 143.2 491.5 154.7 495.9 166.6V166.6zM256 336C300.2 336 336 300.2 336 255.1C336 211.8 300.2 175.1 256 175.1C211.8 175.1 176 211.8 176 255.1C176 300.2 211.8 336 256 336z"></path>
                                     </svg></a></div>
@@ -290,7 +302,7 @@
     <div id="PopUpMainRelay" class="popUpMain" style="display: none;">
         <div class="ContainerMain">
             <div class="popUpMainCardWrapper">
-                <div class="popUpMainCard">
+                <div class="popUpMainCard popUpMainCardAlt">
                     <div class="popUpMainCardTop">
                         <div class="popUpMainCardTopInfo">
                             <h3>Relays</h3>
@@ -331,7 +343,7 @@
                         <div class="popUpMainCardTopInfo">
                             <h3>QR Address</h3>
                         </div>
-                        <div id="ClosePopUpMainQR" class="popUpMainCardTopClose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" style="z-index: 1;">
+                        <div id="ClosePopUpMainQR-1" class="popUpMainCardTopClose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" style="z-index: 1;">
                                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                 <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path>
                             </svg></div>
@@ -343,12 +355,91 @@
             </div>
         </div>
     </div>
+    <div id="PopUpMainAdminSettings" class="popUpMain" style="display: none;">
+        <div class="ContainerMain">
+            <div class="popUpMainCardWrapper">
+                <div class="popUpMainCard popUpMainCardSmall">
+                    <div class="popUpMainCardTop">
+                        <div class="popUpMainCardTopInfo">
+                            <h3>Writers</h3>
+                        </div>
+                        <div id="ClosePopUpMainAdminSettings" class="popUpMainCardTopClose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" style="z-index: 1;">
+                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path>
+                            </svg></div>
+                    </div>
+                    <div class="popUpMainCardBottom">
+                        <div class="pUMCB_AdminSettings">
+                            <div id="writersSettingsList" class="pUMCB_AdminSettingsList">
+                                <div class="pUMCB_ASElement">
+                                    <div class="pUMCB_ASElementAddress"><input type="text" class="pUMCB_ASEAField" placeholder="Writer's public address"></div>
+                                    <div class="pUMCB_ASElementCheck"><input type="checkbox" class="pUMCB_ASElementCheckBox"></div><a class="pUMCB_ASElementRemove" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
+                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                            <path d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z"></path>
+                                        </svg></a>
+                                </div>
+                                <div class="pUMCB_ASElement">
+                                    <div class="pUMCB_ASElementAddress"><input type="text" class="pUMCB_ASEAField" placeholder="Writer's public address"></div>
+                                    <div class="pUMCB_ASElementCheck"><input type="checkbox" class="pUMCB_ASElementCheckBox"></div><a class="pUMCB_ASElementRemove" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
+                                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                            <path d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM394.8 466.1C393.2 492.3 372.3 512 346.9 512H101.1C75.75 512 54.77 492.3 53.19 466.1L31.1 128H416L394.8 466.1z"></path>
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <div class="pUMCB_ASActions"><a class="pUMCB_ASASave" href="#">Save</a>
+                                <div id="adminSettingsAddWritter" class="pUMCB_ASAAdd"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3C0 496.5 15.52 512 34.66 512h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304zM616 200h-48v-48C568 138.8 557.3 128 544 128s-24 10.75-24 24v48h-48C458.8 200 448 210.8 448 224s10.75 24 24 24h48v48C520 309.3 530.8 320 544 320s24-10.75 24-24v-48h48C629.3 248 640 237.3 640 224S629.3 200 616 200z"></path>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="PopUpMainWrite" class="popUpMain" style="display: none;">
+        <div class="ContainerMain">
+            <div class="popUpMainCardWrapper">
+                <div class="popUpMainCard">
+                    <div class="popUpMainCardTop">
+                        <div class="popUpMainCardTopInfo">
+                            <h3>Writing...</h3>
+                        </div>
+                        <div id="ClosePopUpMainWrite" class="popUpMainCardTopClose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" style="z-index: 1;">
+                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path>
+                            </svg></div>
+                    </div>
+                    <div class="popUpMainCardBottom">
+                        <div class="pUMCB_Write">
+                            <div class="pUMCB_Write_FieldBox">
+                                <p class="pUMCB_Write_FieldBox_Text">Title</p><input type="text" class="pUMCB_Write_FieldBox_Input">
+                            </div>
+                            <div class="pUMCB_Write_FieldBox">
+                                <p class="pUMCB_Write_FieldBox_Text">Body</p><textarea class="pUMCB_Write_FieldBox_Input"></textarea>
+                            </div>
+                            <div class="pUMCB_Write_FieldBox">
+                                <p class="pUMCB_Write_FieldBox_Text">Featured Image</p><input type="text" class="pUMCB_Write_FieldBox_Input">
+                            </div>
+                            <div class="pUMCB_Write_FieldBox">
+                                <p class="pUMCB_Write_FieldBox_Text">Summary</p><textarea class="pUMCB_Write_FieldBox_Input"></textarea>
+                            </div>
+                            <div class="pUMCB_Write_Actions"><a class="pUMCB_Write_ActionsPublish" href="#">Publish</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/addComment.js"></script>
+    <script src="assets/js/addWriter.js"></script>
     <script src="assets/js/copyAddress.js"></script>
     <script src="assets/js/followAuthor.js"></script>
     <script src="assets/js/ifLogin.js"></script>
+    <script src="assets/js/openPopUp-1.js"></script>
     <script src="assets/js/openPopUp.js"></script>
     <script src="assets/js/reactActive.js"></script>
 </body>
