@@ -1,6 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var copyButton = document.getElementById('copyAddress');
-  var addressParagraph = document.getElementById('address');
+function copyToClipboard(buttonId, addressId) {
+  var copyButton = document.getElementById(buttonId);
+  var addressParagraph = document.getElementById(addressId);
+
+  if (!copyButton || !addressParagraph) {
+    console.error('Button or address element not found.');
+    return;
+  }
 
   copyButton.addEventListener('click', function() {
     // Create a temporary textarea to copy the text to clipboard
@@ -18,4 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set the tooltip text
     copyButton.title = 'Copied!';
   });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  copyToClipboard('copySiteOwnerAddress', 'SiteOwnerAddress');
+  copyToClipboard('copyWriterAddress', 'WriterAddress');
 });

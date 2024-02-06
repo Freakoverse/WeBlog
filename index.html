@@ -25,13 +25,13 @@
                             <p class="NMTI_Sec_HomeLink_Name">WeBlog</p>
                         </a></div>
                     <div class="NMTI_Sec">
-                        <div class="NMTI_SecInside"><a class="NMTI_SecInside_Link NMTI_SI_LinkTip" href="#">Tip<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
+                        <div class="NMTI_SecInside"><a class="NMTI_SecInside_Link NMTI_SI_LinkTip">Tip<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor">
                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M240.5 224H352C365.3 224 377.3 232.3 381.1 244.7C386.6 257.2 383.1 271.3 373.1 280.1L117.1 504.1C105.8 513.9 89.27 514.7 77.19 505.9C65.1 497.1 60.7 481.1 66.59 467.4L143.5 288H31.1C18.67 288 6.733 279.7 2.044 267.3C-2.645 254.8 .8944 240.7 10.93 231.9L266.9 7.918C278.2-1.92 294.7-2.669 306.8 6.114C318.9 14.9 323.3 30.87 317.4 44.61L240.5 224z"></path>
-                                </svg></a><a id="OpenPopUpMainRelay" class="NMTI_SecInside_Link NMTI_SI_LinkRelay" href="#">Relay<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                </svg></a><a id="OpenPopUpMainRelay" class="NMTI_SecInside_Link NMTI_SI_LinkRelay">Relay<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                     <path d="M480 288H32c-17.62 0-32 14.38-32 32v128c0 17.62 14.38 32 32 32h448c17.62 0 32-14.38 32-32v-128C512 302.4 497.6 288 480 288zM352 408c-13.25 0-24-10.75-24-24s10.75-24 24-24s24 10.75 24 24S365.3 408 352 408zM416 408c-13.25 0-24-10.75-24-24s10.75-24 24-24s24 10.75 24 24S429.3 408 416 408zM480 32H32C14.38 32 0 46.38 0 64v128c0 17.62 14.38 32 32 32h448c17.62 0 32-14.38 32-32V64C512 46.38 497.6 32 480 32zM352 152c-13.25 0-24-10.75-24-24S338.8 104 352 104S376 114.8 376 128S365.3 152 352 152zM416 152c-13.25 0-24-10.75-24-24S402.8 104 416 104S440 114.8 440 128S429.3 152 416 152z"></path>
-                                </svg></a><a class="NMTI_SecInside_Link" href="#">Login</a></div>
+                                </svg></a><a id="loginChange" class="NMTI_SecInside_Link">Login</a></div>
                     </div>
                 </div>
             </div>
@@ -173,30 +173,53 @@
                             <div class="HBSS_Author">
                                 <div class="HBSS_Author_Top">
                                     <div class="HBSS_Author_Top_Left">
-                                        <div style="display: flex;flex-direction: row;grid-gap: 15px;width: 100%;">
-                                            <div style="/*display: flex;*//*flex-direction: column;*//*justify-content: center;*//*align-items: center;*/">
+                                        <div class="HBSS_Author_Top_Left_Inside">
+                                            <div class="HBSS_Author_Top_Left_InsidePic">
                                                 <div class="HBSS_Author_Top_PPWrapper">
                                                     <div class="HBSS_Author_Top_PP" style="background: url(&quot;assets/img/media-cache%20(4).png&quot;) center / cover no-repeat;"></div>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <p class="HBSS_Author_Top_Name">Freakoverse</p>
-                                                <p class="HBSS_Author_Top_Handle">freak@freakoverse.com</p>
+                                            <div class="HBSS_Author_Top_Left_InsideDetails">
+                                                <div class="HBSS_Author_TopWrapper">
+                                                    <p class="HBSS_Author_Top_Name">Freakoverse</p>
+                                                    <p class="HBSS_Author_Top_Handle">freakoverse@weblog.com</p>
+                                                </div>
                                                 <div class="HBSS_Author_Top_AddressWrapper">
-                                                    <p id="address" class="HBSS_Author_Top_Address">npub18n4ysp43ux5c98fs6h9c57qpr4p8r3j8f6e32v0vj8egzy878aqqyzzk9r</p><i class="fas fa-copy HBSS_Author_Top_Icon" id="copyAddress"></i>
+                                                    <div class="HBSS_Author_Top_AddressWrapped">
+                                                        <p id="SiteOwnerAddress" class="HBSS_Author_Top_Address">npub18n4ysp43ux5c98fs6h9c57qpr4p8r3j8f6e32v0vj8egzy878aqqyzzk9r</p>
+                                                    </div>
+                                                    <div class="HBSS_Author_Top_IconWrapper">
+                                                        <div id="copySiteOwnerAddress" class="HBSS_Author_Top_IconWrapped"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="HBSS_Author_Top_Icon">
+                                                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                                <path d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"></path>
+                                                            </svg></div>
+                                                        <div id="siteOwnerOpenPopUpMainQR" class="HBSS_Author_Top_IconWrapped"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="HBSS_Author_Top_Icon">
+                                                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                                                <path d="M144 32C170.5 32 192 53.49 192 80V176C192 202.5 170.5 224 144 224H48C21.49 224 0 202.5 0 176V80C0 53.49 21.49 32 48 32H144zM128 96H64V160H128V96zM144 288C170.5 288 192 309.5 192 336V432C192 458.5 170.5 480 144 480H48C21.49 480 0 458.5 0 432V336C0 309.5 21.49 288 48 288H144zM128 352H64V416H128V352zM256 80C256 53.49 277.5 32 304 32H400C426.5 32 448 53.49 448 80V176C448 202.5 426.5 224 400 224H304C277.5 224 256 202.5 256 176V80zM320 160H384V96H320V160zM352 448H384V480H352V448zM448 480H416V448H448V480zM416 288H448V416H352V384H320V480H256V288H352V320H416V288z"></path>
+                                                            </svg></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="HBSS_Author_Top_Details">
                                         <p class="HBSS_Author_Top_Bio">I guess I'm one of those #vtubers . Having fun talking about general topics, vrchat/similar, and games. Also #indiedev #gamedev You can call me: Freak فْرِيكٌ フリク (still learning Nihongo). #envtuber #podcast #gaming #gamedev</p>
-                                        <div class="HBSS_Author_Top_NostrLinks"><a class="HBSS_Author_Top_NostrLinksLink HBSS_A_T_NLL_HBSSFollow" href="https://primal.net/p/npub18n4ysp43ux5c98fs6h9c57qpr4p8r3j8f6e32v0vj8egzy878aqqyzzk9r" target="_blank">
+                                        <div id="OwnerFollowLogin" class="HBSS_Author_Top_NostrLinks" style="display: flex;"><a class="HBSS_Author_Top_NostrLinksLink HBSS_A_T_NLL_HBSSFollow" target="_blank">
                                                 <p>Follow</p>
                                             </a><a class="HBSS_Author_Top_NostrLinksLink" href="https://primal.net/p/npub18n4ysp43ux5c98fs6h9c57qpr4p8r3j8f6e32v0vj8egzy878aqqyzzk9r" target="_blank"><i class="fas fa-external-link-alt HBSS_Author_Top_NostrLinksLinkIcon"></i></a></div>
                                     </div>
                                 </div>
                                 <div class="HBSS_Author_Bottom"></div>
                             </div>
+                        </div>
+                        <div id="WritersAndAdmin" class="HomeBodySideSec" style="display: none;">
+                            <div class="HBSS_WritersAndAdmin"><a class="HBSS_WAA_Btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M467.1 241.1L351.1 288h94.34c-7.711 14.85-16.29 29.28-25.87 43.01l-132.5 52.99h85.65c-59.34 52.71-144.1 80.34-264.5 52.82l-68.13 68.13c-9.38 9.38-24.56 9.374-33.94 0c-9.375-9.375-9.375-24.56 0-33.94l253.4-253.4c4.846-6.275 4.643-15.19-1.113-20.95c-6.25-6.25-16.38-6.25-22.62 0l-168.6 168.6C24.56 58 366.9 8.118 478.9 .0846c18.87-1.354 34.41 14.19 33.05 33.05C508.7 78.53 498.5 161.8 467.1 241.1z"></path>
+                                    </svg>Write</a><a class="HBSS_WAA_Btn" href="#" style="max-width: 75px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M495.9 166.6C499.2 175.2 496.4 184.9 489.6 191.2L446.3 230.6C447.4 238.9 448 247.4 448 256C448 264.6 447.4 273.1 446.3 281.4L489.6 320.8C496.4 327.1 499.2 336.8 495.9 345.4C491.5 357.3 486.2 368.8 480.2 379.7L475.5 387.8C468.9 398.8 461.5 409.2 453.4 419.1C447.4 426.2 437.7 428.7 428.9 425.9L373.2 408.1C359.8 418.4 344.1 427 329.2 433.6L316.7 490.7C314.7 499.7 307.7 506.1 298.5 508.5C284.7 510.8 270.5 512 255.1 512C241.5 512 227.3 510.8 213.5 508.5C204.3 506.1 197.3 499.7 195.3 490.7L182.8 433.6C167 427 152.2 418.4 138.8 408.1L83.14 425.9C74.3 428.7 64.55 426.2 58.63 419.1C50.52 409.2 43.12 398.8 36.52 387.8L31.84 379.7C25.77 368.8 20.49 357.3 16.06 345.4C12.82 336.8 15.55 327.1 22.41 320.8L65.67 281.4C64.57 273.1 64 264.6 64 256C64 247.4 64.57 238.9 65.67 230.6L22.41 191.2C15.55 184.9 12.82 175.3 16.06 166.6C20.49 154.7 25.78 143.2 31.84 132.3L36.51 124.2C43.12 113.2 50.52 102.8 58.63 92.95C64.55 85.8 74.3 83.32 83.14 86.14L138.8 103.9C152.2 93.56 167 84.96 182.8 78.43L195.3 21.33C197.3 12.25 204.3 5.04 213.5 3.51C227.3 1.201 241.5 0 256 0C270.5 0 284.7 1.201 298.5 3.51C307.7 5.04 314.7 12.25 316.7 21.33L329.2 78.43C344.1 84.96 359.8 93.56 373.2 103.9L428.9 86.14C437.7 83.32 447.4 85.8 453.4 92.95C461.5 102.8 468.9 113.2 475.5 124.2L480.2 132.3C486.2 143.2 491.5 154.7 495.9 166.6V166.6zM256 336C300.2 336 336 300.2 336 255.1C336 211.8 300.2 175.1 256 175.1C211.8 175.1 176 211.8 176 255.1C176 300.2 211.8 336 256 336z"></path>
+                                    </svg></a></div>
                         </div>
                         <div class="HomeBodySideSec">
                             <div class="NMBI_Search">
@@ -218,7 +241,7 @@
                                             <p class="HBSS_ShortPostsPost_TopName">Freakoverse</p>
                                             <div class="HBSS_ShortPostsPost_TopLink"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="HBSS_ShortPostsPost_TopLinkIcon">
                                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                                    <path d="M384 32H64C28.65 32 0 60.66 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.66 419.3 32 384 32zM344 312c0 17.69-14.31 32-32 32s-32-14.31-32-32V245.3l-121.4 121.4C152.4 372.9 144.2 376 136 376s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L234.8 200H168c-17.69 0-32-14.31-32-32s14.31-32 32-32h144c17.69 0 32 14.31 32 32V312z"></path>
+                                                    <path d="M256 64C256 46.33 270.3 32 288 32H415.1C415.1 32 415.1 32 415.1 32C420.3 32 424.5 32.86 428.2 34.43C431.1 35.98 435.5 38.27 438.6 41.3C438.6 41.35 438.6 41.4 438.7 41.44C444.9 47.66 447.1 55.78 448 63.9C448 63.94 448 63.97 448 64V192C448 209.7 433.7 224 416 224C398.3 224 384 209.7 384 192V141.3L214.6 310.6C202.1 323.1 181.9 323.1 169.4 310.6C156.9 298.1 156.9 277.9 169.4 265.4L338.7 96H288C270.3 96 256 81.67 256 64V64zM0 128C0 92.65 28.65 64 64 64H160C177.7 64 192 78.33 192 96C192 113.7 177.7 128 160 128H64V416H352V320C352 302.3 366.3 288 384 288C401.7 288 416 302.3 416 320V416C416 451.3 387.3 480 352 480H64C28.65 480 0 451.3 0 416V128z"></path>
                                                 </svg></div>
                                         </div>
                                         <div class="HBSS_ShortPostsPost_Bottom">
@@ -231,7 +254,7 @@
                                             <p class="HBSS_ShortPostsPost_TopName">Freakoverse</p>
                                             <div class="HBSS_ShortPostsPost_TopLink"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="HBSS_ShortPostsPost_TopLinkIcon" style="width: 100%;height: 100%;">
                                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                                    <path d="M384 32H64C28.65 32 0 60.66 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.66 419.3 32 384 32zM344 312c0 17.69-14.31 32-32 32s-32-14.31-32-32V245.3l-121.4 121.4C152.4 372.9 144.2 376 136 376s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L234.8 200H168c-17.69 0-32-14.31-32-32s14.31-32 32-32h144c17.69 0 32 14.31 32 32V312z"></path>
+                                                    <path d="M256 64C256 46.33 270.3 32 288 32H415.1C415.1 32 415.1 32 415.1 32C420.3 32 424.5 32.86 428.2 34.43C431.1 35.98 435.5 38.27 438.6 41.3C438.6 41.35 438.6 41.4 438.7 41.44C444.9 47.66 447.1 55.78 448 63.9C448 63.94 448 63.97 448 64V192C448 209.7 433.7 224 416 224C398.3 224 384 209.7 384 192V141.3L214.6 310.6C202.1 323.1 181.9 323.1 169.4 310.6C156.9 298.1 156.9 277.9 169.4 265.4L338.7 96H288C270.3 96 256 81.67 256 64V64zM0 128C0 92.65 28.65 64 64 64H160C177.7 64 192 78.33 192 96C192 113.7 177.7 128 160 128H64V416H352V320C352 302.3 366.3 288 384 288C401.7 288 416 302.3 416 320V416C416 451.3 387.3 480 352 480H64C28.65 480 0 451.3 0 416V128z"></path>
                                                 </svg></div>
                                         </div>
                                         <div class="HBSS_ShortPostsPost_Bottom">
@@ -244,7 +267,7 @@
                                             <p class="HBSS_ShortPostsPost_TopName">Freakoverse</p>
                                             <div class="HBSS_ShortPostsPost_TopLink"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="HBSS_ShortPostsPost_TopLinkIcon" style="width: 100%;height: 100%;">
                                                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                                                    <path d="M384 32H64C28.65 32 0 60.66 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.66 419.3 32 384 32zM344 312c0 17.69-14.31 32-32 32s-32-14.31-32-32V245.3l-121.4 121.4C152.4 372.9 144.2 376 136 376s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L234.8 200H168c-17.69 0-32-14.31-32-32s14.31-32 32-32h144c17.69 0 32 14.31 32 32V312z"></path>
+                                                    <path d="M256 64C256 46.33 270.3 32 288 32H415.1C415.1 32 415.1 32 415.1 32C420.3 32 424.5 32.86 428.2 34.43C431.1 35.98 435.5 38.27 438.6 41.3C438.6 41.35 438.6 41.4 438.7 41.44C444.9 47.66 447.1 55.78 448 63.9C448 63.94 448 63.97 448 64V192C448 209.7 433.7 224 416 224C398.3 224 384 209.7 384 192V141.3L214.6 310.6C202.1 323.1 181.9 323.1 169.4 310.6C156.9 298.1 156.9 277.9 169.4 265.4L338.7 96H288C270.3 96 256 81.67 256 64V64zM0 128C0 92.65 28.65 64 64 64H160C177.7 64 192 78.33 192 96C192 113.7 177.7 128 160 128H64V416H352V320C352 302.3 366.3 288 384 288C401.7 288 416 302.3 416 320V416C416 451.3 387.3 480 352 480H64C28.65 480 0 451.3 0 416V128z"></path>
                                                 </svg></div>
                                         </div>
                                         <div class="HBSS_ShortPostsPost_Bottom">
@@ -259,7 +282,12 @@
             </div>
         </div>
     </div>
-    <div id="PopUpMain" class="popUpMain" style="display: none;">
+    <div class="secMainFooterWrapper">
+        <div class="secMainFooter">
+            <p class="secMainFooterPara">Website was designed &amp; developed by&nbsp;<a class="secMainFooterParaLink" href="#">Freakoverse</a></p>
+        </div>
+    </div>
+    <div id="PopUpMainRelay" class="popUpMain" style="display: none;">
         <div class="ContainerMain">
             <div class="popUpMainCardWrapper">
                 <div class="popUpMainCard">
@@ -267,20 +295,62 @@
                         <div class="popUpMainCardTopInfo">
                             <h3>Relays</h3>
                         </div>
-                        <div id="ClosePopUpMain" class="popUpMainCardTopClose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" style="z-index: 1;">
+                        <div id="ClosePopUpMainRelay" class="popUpMainCardTopClose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" style="z-index: 1;">
                                 <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                 <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path>
                             </svg></div>
                     </div>
-                    <div class="popUpMainCardBottom"></div>
+                    <div class="popUpMainCardBottom">
+                        <div class="pUMRelays">
+                            <div class="pUMRelaysRelay"><input type="radio" class="pUMRelaysRelayRadio" required="" name="relays">
+                                <div class="pUMRelaysRelayBG">
+                                    <p class="pUMRelaysRelayPara">Relay 1</p>
+                                </div>
+                            </div>
+                            <div class="pUMRelaysRelay"><input type="radio" class="pUMRelaysRelayRadio" required="" name="relays">
+                                <div class="pUMRelaysRelayBG">
+                                    <p class="pUMRelaysRelayPara">Relay 2</p>
+                                </div>
+                            </div>
+                            <div class="pUMRelaysRelay"><input type="radio" class="pUMRelaysRelayRadio" required="" name="relays">
+                                <div class="pUMRelaysRelayBG">
+                                    <p class="pUMRelaysRelayPara">Relay 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="PopUpMainQR" class="popUpMain" style="display: none;">
+        <div class="ContainerMain">
+            <div class="popUpMainCardWrapper">
+                <div class="popUpMainCard popUpMainCardSmall">
+                    <div class="popUpMainCardTop">
+                        <div class="popUpMainCardTopInfo">
+                            <h3>QR Address</h3>
+                        </div>
+                        <div id="ClosePopUpMainQR" class="popUpMainCardTopClose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-96 0 512 512" width="1em" height="1em" fill="currentColor" style="z-index: 1;">
+                                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"></path>
+                            </svg></div>
+                    </div>
+                    <div class="popUpMainCardBottom">
+                        <div class="pUMCB_QR" style="background: url(&quot;assets/img/ProfileLinkQR.png&quot;) center / contain no-repeat;"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/addComment.js"></script>
     <script src="assets/js/copyAddress.js"></script>
+    <script src="assets/js/followAuthor.js"></script>
+    <script src="assets/js/ifLogin.js"></script>
     <script src="assets/js/openPopUp.js"></script>
+    <script src="assets/js/reactActive.js"></script>
 </body>
 
 </html>
