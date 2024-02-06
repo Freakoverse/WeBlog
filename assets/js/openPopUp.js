@@ -24,7 +24,7 @@ document.getElementById('ClosePopUpMainRelay').addEventListener('click', functio
 });
 
 //pop-up for comment replies
-var openButtonsCommentReplies = document.querySelectorAll('.HBLCL_CAEReplies');
+var openButtonsCommentReplies = document.querySelectorAll('.HBLCL_CAEReplies, .HBLCL_CAEReply');
 openButtonsCommentReplies.forEach(function(button, index) {
     button.addEventListener('click', function() {
         togglePopUp('PopUpMainCommentReplies', 'open');
